@@ -1,4 +1,5 @@
 import daisyui from "daisyui";
+import scrollbar from "tailwind-scrollbar";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,5 +11,5 @@ export default {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, scrollbar],
 };
