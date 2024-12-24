@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  avatar: string;
+  avatar: string | undefined;
 };
 
 const Avatar: React.FC<Props> = (props: Props) => {

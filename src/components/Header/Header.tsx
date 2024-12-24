@@ -8,7 +8,7 @@ import HeaderAction from "../HeaderAction/HeaderAction";
 
 const Header: React.FC = memo(() => {
   return (
-    <div className="sticky top-0 flex justify-between items-center px-6 h-[60px] shadow-[0_2px_10px_rgba(0,0,0,0.2)] bg-white z-[999]">
+    <div className="flex justify-between items-center mx-auto max-w-screen-xl px-6 h-[60px]">
       <HeaderSearch />
       <div className="flex">
         <NavLink

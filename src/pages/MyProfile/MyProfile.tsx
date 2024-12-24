@@ -1,7 +1,7 @@
 import React from "react";
 import avatar from "../../assets/avatar.jpg";
 import { FaChevronDown, FaPen, FaPlus } from "react-icons/fa";
-import Post from "../../components/Post/Post";
+import Post from "../../components/posts/Post/Post";
 import CreatePostModal from "../../components/modals/CreatePostModal";
 
 const MyProfile: React.FC = () => {

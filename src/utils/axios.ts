@@ -2,11 +2,11 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: import.meta.env.VITE_BACKEND_URL,
-  timeout: 5000,
+  timeout: 15000,
 });
 
 // Add a request interceptor
-axios.interceptors.request.use(
+instance.interceptors.request.use(
   function (config) {
     const accessToken = localStorage.getItem("access_token");
     if (accessToken) {
@@ -20,7 +20,7 @@ axios.interceptors.request.use(
 );
 
 // Add a response interceptor
-axios.interceptors.response.use(
+instance.interceptors.response.use(
   function (response) {
     return response;
   },

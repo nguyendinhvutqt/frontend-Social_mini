@@ -10,6 +10,7 @@ type Props = {
 
 const ProtectedRoute: React.FC<Props> = ({ children }: Props) => {
   const { isLoggedIn } = useSelector((state: RootState) => state.user);
+
   if (!isLoggedIn) {
     return <Navigate to="/sign-in" replace />;
   }

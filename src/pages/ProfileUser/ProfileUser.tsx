@@ -3,7 +3,7 @@ import avatar from "../../assets/avatar.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { FaChevronDown, FaFacebookMessenger } from "react-icons/fa";
-import Post from "../../components/Post/Post";
+import Post from "../../components/posts/Post/Post";
 
 const ProfileUser: React.FC = () => {
   return (

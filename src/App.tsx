@@ -9,20 +9,22 @@ import "./App.css";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import ProfileUser from "./pages/ProfileUser/ProfileUser";
 import MyProfile from "./pages/MyProfile/MyProfile";
+import PostDetail from "./pages/PostDetail/PostDetail";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route
-            index
-            element={
-              <ProtectedRoute>
-                <HomePage />
-              </ProtectedRoute>
-            }
-          />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <MainLayout />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<HomePage />} />
+          <Route path="/post" element={<PostDetail />} />
           <Route path="/profile" element={<ProfileUser />} />
           <Route path=":id" element={<MyProfile />} />
         </Route>
